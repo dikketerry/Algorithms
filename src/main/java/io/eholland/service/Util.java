@@ -1,11 +1,15 @@
 package io.eholland.service;
 
+import java.util.Arrays;
+
 public abstract class Util {
 
     public static int[] stringToIntArray(String s) {
         int[] a = new int[s.length()];
         for (int i = 0; i < a.length; i++) {
-            a[i] = s.charAt(i);
+            char bin = s.charAt(i);
+            String t = String.valueOf(bin);
+            a[i] = Integer.parseInt(t);
         }
         return a;
     }
