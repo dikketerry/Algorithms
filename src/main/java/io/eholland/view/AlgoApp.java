@@ -21,9 +21,9 @@ public class AlgoApp {
         System.out.println("index found for num " + num + ": " + search.linearSearch(a, num));
 
         // insert-sort
-        System.out.println(Arrays.toString(a));         // prior to sort
+        System.out.println("unsorted: " + Arrays.toString(a));         // prior to sort
         double[] aSorted = sort.insertSort(a);
-        System.out.println(Arrays.toString(aSorted));   // after sort
+        System.out.println("sorted: " + Arrays.toString(aSorted));   // after sort
 
         // sum of binary nrs - webzz method
         String sumString = Util.binaryAddition(s1, s2);

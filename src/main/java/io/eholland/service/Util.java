@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 public abstract class Util {
 
+    // convert string characters to ints, add them in an array
     public static int[] stringToIntArray(String s) {
         int[] a = new int[s.length()];
         for (int i = 0; i < a.length; i++) {
@@ -14,6 +15,8 @@ public abstract class Util {
         return a;
     }
 
+    // initiate array with length based on 2 input arrays containing ints 0 and/or 1.
+    // initiated array is used for summing the 2 input 'binary' arrays so needs to be of length +1
     public static int[] setSumBinArray(int[] a, int[] b) {
         int[] sum;
         if (a.length >= b.length) {
