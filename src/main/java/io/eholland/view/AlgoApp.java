@@ -1,14 +1,23 @@
 package io.eholland.view;
 
 import io.eholland.service.Searching;
+import io.eholland.service.ToThePower;
 import io.eholland.service.Sorting;
 import io.eholland.service.Util;
 
+import java.math.BigInteger;
 import java.util.Arrays;
 
 public class AlgoApp {
 
     public static void main(String[] args) {
+
+        ToThePower toThePower = new ToThePower();
+        int x = 2;
+        int y = 123;
+        System.out.println(x + " to the power of " + y + " = " + toThePower.aToThePowerOfB(x, y));
+
+
         Sorting sort = new Sorting();
         Searching search = new Searching();
 
